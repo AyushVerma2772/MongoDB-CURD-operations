@@ -90,19 +90,22 @@ StudentModel.insertMany(docsArray)
 ## 2. Read
 
 ### 2a. using find() method of Model
-``` javascript StudentModel.find()
+``` javascript 
+StudentModel.find()
 .then(foundDoc => console.log(foundDoc))
 .catch(err => console.log(err))
 ```
 
 ### 2b. using findOne method of Model
-``` javascript StudentModel.findOne({"result.marks": 5})
+``` javascript 
+StudentModel.findOne({"result.marks": 5})
 .then(foundDoc => console.log(foundDoc))
 .catch(err => console.log(err))
 ```
 
 ### 2c. using findById method of Model
-``` javascript StudentModel.findById("660ae0ee50ff4a5cbed0409d")
+``` javascript 
+StudentModel.findById("660ae0ee50ff4a5cbed0409d")
 .then(foundDoc => console.log(foundDoc))
 .catch(err => console.log(err))
 ```
